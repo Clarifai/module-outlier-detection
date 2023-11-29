@@ -78,7 +78,7 @@ def get_embeddings_for_inputs(input_urls : list[str] ,embed_model_name : str
       A list of embeddings.
     """
     input_obj=Inputs()
-    model_obj=Model(url_init=embed_model_name)
+    model_obj=Model(url=embed_model_name)
     batch_size = 32
     embeddings = []
     try:
@@ -220,7 +220,7 @@ def update_inputs_metadata_grpc( input_ids : List[str], metadata : List[str],aut
 with st.form(key='clusters-app'):
     st.title('Visualize and detect outliers in your app inputs.')
     dataset_id=st.selectbox("**Select the dataset**",list_dataset(app_id=app_id ,user_id=user_id),key="dataset")
-    umap_n_neighbours=st.slider('No of neighbours (Recommended above 50 for large datasets):', 2, 100)
+    umap_n_neighbours=st.slider('No of neighbours :', 2, 100)
     cluster_min_distance = st.text_input('Epsilon (min distance ):', 0.5)
     cluster_min_samples = st.slider('Min Samples:', 3, 100, 5)
     submitted = st.form_submit_button('Begin!')
