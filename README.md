@@ -1,16 +1,17 @@
 ![Clarifai logo](https://www.clarifai.com/hs-fs/hubfs/logo/Clarifai/clarifai-740x150.png?width=240)
 
-# Clarifai App Module Template
 
-This is a template repository to make it easy to get started creating a UI module with Clarifai.
+# Introduction
 
+This is a streamlit app with the official Clarifai Python utilities. This repo includes higher level convencience classes, functions, and scripts to make using our [API](https://docs.clarifai.com) easier. This is built on top of the [Clarifai Python gRPC Client](https://github.com/Clarifai/clarifai-python-grpc).
 
-## To use this repo
+* Try the Clarifai demo at: https://clarifai.com/demo
+* Sign up for a free account at: https://clarifai.com/signup
+* Read the documentation at: https://docs.clarifai.com/
 
-1. Click the "Use this template" green button on github to make a repo from this repo template and give it a name of the format module-{XYZ} filling in the XYZ portion.
-2. Clone the new repo as normal to your development environment.
-3. `pip install -r requirements.txt` to make sure you have all the Python packages installed. Add any new packages to this requirements.txt file that you add during development.
-4. Update the README.md to capture what your new module will do.
-5. Rename the pages/*.py files as you desire and start filling them in to implement your module.
-6. After you're tried things out locally, push your changes to github and get the git commit URL from there in order to create a module in Clarifai.
-7. Go to any app you can create in within Clarifai, select Modules on the left and "Create Module" button, then follow the steps.
+# Outlier detection
+
+This module detects outliers from the input data and helps visualize high dimensional data in 3D space. It clusters the data together and finds the outlier based on the distance and number of neighbour points. 
+## page preview 
+![image](https://github.com/Clarifai/module-dashboard-ngl/assets/143642606/26c8c61e-fb2f-45e5-bbbe-b3a17299429e)
+![image](https://github.com/Clarifai/module-dashboard-ngl/assets/143642606/a855daee-7af0-49f6-b36f-61025e9284e8)
